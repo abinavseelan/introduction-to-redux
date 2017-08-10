@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: arial,sans-serif;
+  background: #9B64F0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 600px;
+  box-shadow: 4px 7px 18px 9px rgba(0, 0, 0, .14);
+  padding: 40px;
+  background-color: #2D365B;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.ctas {
+  display: flex;
+  align-items: center;
+  margin: 70px 0 35px 0;
+  justify-content: space-around;
+}
+
+.btn-add, .btn-subtract {
+  padding: 20px 30px;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  color: white;
+  font-size: 1em;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+
+
+.btn-add {
+  background-color: #3eef5e;
+  &:hover {
+    background-color: darken(#3eef5e, 10%);
+    transition: all 0.2s ease-out;
+  }
+}
+
+.btn-subtract {
+  background-color: #f94040;
+
+  &:hover {
+    background-color: darken(#f94040, 10%);
+    transition: all 0.2s ease-out;
+  }
+}
+
+
