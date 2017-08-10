@@ -41,6 +41,7 @@ class App extends Component {
 }
 
 // create a function to map the state(store) to props here
+// Generate a new component from <App /> after running it through the connect() method
 
 window.addEventListener('DOMContentLoaded', () => {
   let appContainer = document.getElementById(APP_CONTAINER_NAME);
@@ -51,6 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(appContainer);
   }
 
-  // Wrap the <App/> component in the connect method to map the store to the props
+  // Wrap the new component inside a <Provider>  component to pass down the store
   render(<App />, appContainer);
 });

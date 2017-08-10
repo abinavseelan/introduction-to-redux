@@ -1,6 +1,6 @@
-// Get the `createStore` function from `redux`
+// Get the `createStore` and `combineReducers` functions from `redux`
 
 // Get the reducer from `./reducer`
 
-// Generate the store object using `createStore` and the `reducer` and export it
+// Generate the store object using `createStore` (combine the `reducer`) and export it
 
