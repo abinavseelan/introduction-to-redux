@@ -1,0 +1,35 @@
+{
+  "name": "introduction-to-redux",
+  "version": "1.0.0",
+  "description": "Repository for the `Introduction to Redux` talk at Saltside, Bangalore on 11th August, 2017",
+  "main": "server.js",
+  "repository": "https://github.com/abinavseelan/introduction-to-redux.git",
+  "author": "Abinav Seelan <abinav.n.seelan@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --progress",
+    "server": "node server.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "express": "^4.15.4",
+    "html-webpack-plugin": "^2.30.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "postcss-nested": "^2.1.0",
+    "precss": "^2.0.0",
+    "webpack": "^3.5.2"
+  }
+}
