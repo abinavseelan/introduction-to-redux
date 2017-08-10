@@ -9,6 +9,11 @@ class App extends Component {
   constructor (args) {
     super(args);
     // Give this component a state variable to hold the result of the operations
+    this.state = {
+      count: 0
+    }
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick (event) {
@@ -16,6 +21,20 @@ class App extends Component {
     // event.target.name contains the type of operator
     // How about spinning up some logic to update the state based on the operator selected? =)
     // Hint: this.setState();
+    const type = event.target.name;
+
+    if (type === 'add') {
+      this.setState({
+        count: this.state.count + 1
+      });
+    }
+
+    if (type === 'subtract') {
+      this.setState({
+        count: this.state.count - 1
+      });
+    }
+
   }
   render () {
     // You'll have to display the count on L25
@@ -23,11 +42,11 @@ class App extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.card}>
-          <h1>{`Counter: `}</h1>
+          <h1>{`Counter: ${this.state.count}`}</h1>
 
           <div className={styles.ctas}>
-            <button name="add" className={styles['btn-add']}>Add 1</button>
-            <button name="subtract" className={styles['btn-subtract']}>Subtract 1</button>
+            <button name="add" onClick={this.handleClick} className={styles['btn-add']}>Add 1</button>
+            <button name="subtract" onClick={this.handleClick} className={styles['btn-subtract']}>Subtract 1</button>
           </div>
         </div>
       </div>
