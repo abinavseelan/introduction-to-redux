@@ -2,6 +2,10 @@
 
 Repository for the `Introduction to Redux` talk given at Saltside, Bangalore on 11th August, 2017
 
+## Walkthrough
+
+A run-down of the talk, the exercises and the solutions are discussed in the [Wiki](https://github.com/abinavseelan/introduction-to-redux/wiki)
+
 ## Setup Guide
 
 ### Prerequisites
